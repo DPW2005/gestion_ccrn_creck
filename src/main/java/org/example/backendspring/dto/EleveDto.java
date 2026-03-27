@@ -1,0 +1,23 @@
+package org.example.backendspring.dto;
+
+import lombok.Data;
+
+import java.time.LocalDate;
+
+@Data
+public class EleveDto {
+
+    public  String matriculate ;
+
+    public String name ;
+
+    public LocalDate birthday ;
+
+    public String ill ;
+
+    public String className ;
+
+    public String schoolName ;
+
+    public String parentName ;
+}
