@@ -1,4 +1,9 @@
 package org.example.backendspring.repositories;
 
-public interface MatiereRepository {
+import org.example.backendspring.models.Matiere;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MatiereRepository extends JpaRepository<Matiere , Long> {
+
+    Matiere findByName(String name) ;
 }
