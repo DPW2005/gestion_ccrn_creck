@@ -16,8 +16,10 @@ public class Enseignant {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id ;
 
+    @Column(unique = true)
     public String name ;
 
+    @Column(unique = true)
     public String phone ;
 
     @OneToMany(mappedBy = "enseignant")

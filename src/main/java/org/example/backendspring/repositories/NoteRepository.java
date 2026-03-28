@@ -10,6 +10,8 @@ import java.util.List;
 
 public interface NoteRepository extends JpaRepository<Note , Long> {
 
+    Note findByName(String name) ;
+
     List<Note> findAllByEleve(Eleve eleve) ;
 
     List<Note> findAllByEvaluation(Evaluation evaluation) ;

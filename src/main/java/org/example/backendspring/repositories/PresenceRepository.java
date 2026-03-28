@@ -9,6 +9,8 @@ import java.util.List;
 
 public interface PresenceRepository extends JpaRepository<Presence , Long> {
 
+    Presence findByName(String name) ;
+
     List<Presence> findAllByEleve(Eleve eleve) ;
 
     List<Presence> findAllByAppel(Appel appel) ;

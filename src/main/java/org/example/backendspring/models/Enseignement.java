@@ -17,6 +17,7 @@ public class Enseignement {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id ;
 
+    @Column(unique = true)
     public String name ;
 
     @ElementCollection

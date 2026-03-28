@@ -17,8 +17,10 @@ public class Eleve {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id ;
 
+    @Column(unique = true)
     public String matriculate ;
 
+    @Column(unique = true)
     public  String name ;
 
     public LocalDate birthday ;

@@ -16,6 +16,7 @@ public class Classe {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id ;
 
+    @Column(unique = true)
     public String name ;
 
     public String place ;

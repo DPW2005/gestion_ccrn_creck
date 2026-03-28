@@ -14,6 +14,9 @@ public class Note {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id ;
 
+    @Column(unique = true)
+    public String name ;
+
     public double value ;
 
     @ManyToOne
