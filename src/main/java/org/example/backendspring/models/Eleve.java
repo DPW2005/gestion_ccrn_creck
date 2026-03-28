@@ -29,6 +29,8 @@ public class Eleve {
 
     public String ill ;
 
+    public boolean badge ;
+
     @ManyToOne
     public Classe classe ;
 

@@ -14,6 +14,8 @@ public interface ExamenInterface {
 
     void deleteExamen(long id) ;
 
+    void addClasseToList(long id , String className) ;
+
     void addBulletinToList(long id , String reportCardName) ;
 
     void addEvaluationToList(long id , String subjectName) ;

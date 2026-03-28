@@ -22,4 +22,6 @@ public interface EnseignantInterface {
     Enseignant findByPhone(String phone) ;
 
     List<Enseignant> findAll() ;
+
+    List<Enseignant> findAllByLesson(String lessonName) ;
 }

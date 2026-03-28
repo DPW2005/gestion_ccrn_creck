@@ -22,6 +22,6 @@ public class Etablissement {
     public String address ;
 
     @OneToMany(mappedBy = "etablissement")
-    private List<Eleve> eleves ;
+    public List<Eleve> eleves ;
 
 }

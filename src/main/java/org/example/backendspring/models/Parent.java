@@ -24,5 +24,5 @@ public class Parent {
     public String phone ;
 
     @ManyToMany(mappedBy = "parents")
-    private List<Eleve> eleves ;
+    public List<Eleve> eleves ;
 }

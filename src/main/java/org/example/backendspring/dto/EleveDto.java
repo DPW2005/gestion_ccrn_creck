@@ -17,9 +17,9 @@ public class EleveDto {
 
     public String ill ;
 
+    public boolean badge ;
+
     public String className ;
 
     public String schoolName ;
-
-    public String parentName ;
 }

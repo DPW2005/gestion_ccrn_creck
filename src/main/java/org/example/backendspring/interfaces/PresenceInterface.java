@@ -21,7 +21,7 @@ public interface PresenceInterface {
 
     List<Presence> findAll() ;
 
-    List<Presence> findAllByEleve(Eleve eleve) ;
+    List<Presence> findAllByEleve(String studentName) ;
 
-    List<Presence> findAllByAppel(Appel appel) ;
+    List<Presence> findAllByAppel(String callName) ;
 }

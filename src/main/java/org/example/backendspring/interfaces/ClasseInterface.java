@@ -15,6 +15,8 @@ public interface ClasseInterface {
 
     void addEnseignementToList(long id , String teachName) ;
 
+    void addExamenToList(long id , String examName) ;
+
     void addEleveToList(long id , String studentName) ;
 
     void addAppelToList(long id , String callName) ;

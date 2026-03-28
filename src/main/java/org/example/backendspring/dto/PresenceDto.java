@@ -9,5 +9,5 @@ public class PresenceDto {
 
     public String callName ;
 
-    public Boolean present ;
+    public boolean present ;
 }

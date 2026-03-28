@@ -17,7 +17,7 @@ public class Presence {
     @Column(unique = true)
     public String name ;
 
-    public Boolean present ;
+    public boolean present ;
 
     @ManyToOne
     public Eleve eleve ;

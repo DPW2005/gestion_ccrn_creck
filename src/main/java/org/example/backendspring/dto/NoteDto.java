@@ -9,7 +9,7 @@ public class NoteDto {
 
     public String studentName ;
 
-    public String evaluationName ;
+    public String subjectName ;
 
-    public String bulletinName ;
+    public String reportCardName ;
 }

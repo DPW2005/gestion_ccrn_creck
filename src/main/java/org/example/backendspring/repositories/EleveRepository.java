@@ -19,4 +19,6 @@ public interface EleveRepository extends JpaRepository<Eleve , Long> {
     List<Eleve> findAllByClasse(Classe classe) ;
 
     List<Eleve> findAllByEtablissement(Etablissement etablissement) ;
+
+    List<Eleve> findAllByBadge(boolean badge) ;
 }

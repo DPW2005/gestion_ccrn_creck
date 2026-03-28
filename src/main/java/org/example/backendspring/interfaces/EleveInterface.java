@@ -36,6 +36,8 @@ public interface EleveInterface {
 
     List<Eleve> findAllByEtablissement(String schoolName) ;
 
+    List<Eleve> findAllByBadge(boolean badge) ;
+
     List<Eleve> findAllByParent(String parentName) ;
 
     List<Eleve> findByRegistration(LocalDate firstDate , LocalDate secondDate) ;

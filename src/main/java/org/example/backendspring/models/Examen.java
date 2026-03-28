@@ -24,9 +24,6 @@ public class Examen {
 
     public LocalDate finish ;
 
-    @ElementCollection
-    public List<String> matieres ;
-
     @ManyToMany
     @JoinTable(name = "exam_class", joinColumns = @JoinColumn(name = "examen_id"), inverseJoinColumns = @JoinColumn(name = "classe_id"))
     public List<Classe> classes ;

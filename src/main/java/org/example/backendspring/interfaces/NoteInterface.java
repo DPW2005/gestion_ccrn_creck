@@ -22,9 +22,9 @@ public interface NoteInterface {
 
     List<Note> findAll() ;
 
-    List<Note> findAllByEleve(Eleve eleve) ;
+    List<Note> findAllByEleve(String studentName) ;
 
-    List<Note> findAllByEvaluation(Evaluation evaluation) ;
+    List<Note> findAllByEvaluation(String subjectName) ;
 
-    List<Note> findAllByBulletin(Bulletin bulletin) ;
+    List<Note> findAllByBulletin(String reportCardName) ;
 }
