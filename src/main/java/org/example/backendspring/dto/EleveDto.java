@@ -13,6 +13,8 @@ public class EleveDto {
 
     public LocalDate birthday ;
 
+    public LocalDate registration ;
+
     public String ill ;
 
     public String className ;

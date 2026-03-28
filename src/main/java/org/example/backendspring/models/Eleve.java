@@ -25,6 +25,8 @@ public class Eleve {
 
     public LocalDate birthday ;
 
+    public LocalDate registration ;
+
     public String ill ;
 
     @ManyToOne

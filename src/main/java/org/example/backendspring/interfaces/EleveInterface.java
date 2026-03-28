@@ -3,6 +3,7 @@ package org.example.backendspring.interfaces;
 import org.example.backendspring.dto.EleveDto;
 import org.example.backendspring.models.Eleve;
 
+import java.time.LocalDate;
 import java.util.List;
 
 public interface EleveInterface {
@@ -36,4 +37,6 @@ public interface EleveInterface {
     List<Eleve> findAllByEtablissement(String schoolName) ;
 
     List<Eleve> findAllByParent(String parentName) ;
+
+    List<Eleve> findByRegistration(LocalDate firstDate , LocalDate secondDate) ;
 }
