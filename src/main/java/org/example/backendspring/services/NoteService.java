@@ -10,9 +10,11 @@ import org.example.backendspring.repositories.BulletinRepository;
 import org.example.backendspring.repositories.EleveRepository;
 import org.example.backendspring.repositories.EvaluationRepository;
 import org.example.backendspring.repositories.NoteRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class NoteService implements NoteInterface {
 
     private final NoteRepository noteRepository ;

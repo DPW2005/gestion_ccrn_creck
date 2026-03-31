@@ -15,7 +15,7 @@ public interface ParentInterface {
 
     void addEleveToList(long id , String studentName) ;
 
-    Parent findyId(long id) ;
+    Parent findById(long id) ;
 
     Parent findByName(String name) ;
 

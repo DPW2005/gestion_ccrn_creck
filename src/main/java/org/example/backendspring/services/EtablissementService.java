@@ -6,9 +6,11 @@ import org.example.backendspring.models.Eleve;
 import org.example.backendspring.models.Etablissement;
 import org.example.backendspring.repositories.EleveRepository;
 import org.example.backendspring.repositories.EtablissementRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EtablissementService implements EtablissementInterface {
 
     private final EtablissementRepository etablissementRepository ;

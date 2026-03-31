@@ -10,9 +10,11 @@ import org.example.backendspring.repositories.BulletinRepository;
 import org.example.backendspring.repositories.EleveRepository;
 import org.example.backendspring.repositories.ExamenRepository;
 import org.example.backendspring.repositories.NoteRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class BulletinService implements BulletinInterface {
 
     private final BulletinRepository bulletinRepository ;

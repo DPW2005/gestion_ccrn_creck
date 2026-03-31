@@ -40,5 +40,5 @@ public interface EleveInterface {
 
     List<Eleve> findAllByParent(String parentName) ;
 
-    List<Eleve> findByRegistration(LocalDate firstDate , LocalDate secondDate) ;
+    List<Eleve> findByRegistration(String firstDate , String secondDate) ;
 }

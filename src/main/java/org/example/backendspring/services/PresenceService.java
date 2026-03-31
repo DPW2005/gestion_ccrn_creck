@@ -8,9 +8,11 @@ import org.example.backendspring.models.Presence;
 import org.example.backendspring.repositories.AppelRepository;
 import org.example.backendspring.repositories.EleveRepository;
 import org.example.backendspring.repositories.PresenceRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PresenceService implements PresenceInterface {
 
     private final PresenceRepository presenceRepository ;

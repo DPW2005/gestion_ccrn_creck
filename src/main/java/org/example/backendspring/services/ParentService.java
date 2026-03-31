@@ -6,9 +6,11 @@ import org.example.backendspring.models.Eleve;
 import org.example.backendspring.models.Parent;
 import org.example.backendspring.repositories.EleveRepository;
 import org.example.backendspring.repositories.ParentRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ParentService implements ParentInterface {
 
     private final ParentRepository parentRepository ;
@@ -32,7 +34,7 @@ public class ParentService implements ParentInterface {
 
     @Override
     public void modifyParent(long id, ParentDto parentDto) {
-        Parent parent = this.findyId(id) ;
+        Parent parent = this.findById(id) ;
         parent.name = parentDto.name ;
         parent.address = parentDto.address ;
         parent.phone = parentDto.phone ;
@@ -47,7 +49,7 @@ public class ParentService implements ParentInterface {
 
     @Override
     public void addEleveToList(long id, String studentName) {
-        Parent parent = this.findyId(id) ;
+        Parent parent = this.findById(id) ;
         Eleve eleve = this.eleveRepository.findByName(studentName) ;
         parent.eleves.add(eleve) ;
 
@@ -55,7 +57,7 @@ public class ParentService implements ParentInterface {
     }
 
     @Override
-    public Parent findyId(long id) {
+    public Parent findById(long id) {
         return this.parentRepository.findById(id).get() ;
     }
 

@@ -26,7 +26,7 @@ public interface ExamenInterface {
 
     List<Examen> findAll() ;
 
-    List<Examen> findAllByStart(LocalDate start) ;
+    List<Examen> findAllByStart(String start) ;
 
     List<Examen> findAllByClasse(String className) ;
 }

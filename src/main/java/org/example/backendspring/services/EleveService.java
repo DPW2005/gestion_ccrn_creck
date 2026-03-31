@@ -4,10 +4,12 @@ import org.example.backendspring.dto.EleveDto;
 import org.example.backendspring.interfaces.EleveInterface;
 import org.example.backendspring.models.*;
 import org.example.backendspring.repositories.*;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Service
 public class EleveService implements EleveInterface {
 
     private  final EleveRepository eleveRepository ;
@@ -158,9 +160,9 @@ public class EleveService implements EleveInterface {
     }
 
     @Override
-    public List<Eleve> findByRegistration(LocalDate firstDate, LocalDate secondDate) {
+    public List<Eleve> findByRegistration(String firstDate, String secondDate) {
         List<Eleve> eleves = this.findAll() ;
-        eleves.removeIf(eleve -> !(eleve.registration.isAfter(firstDate) && eleve.registration.isBefore(secondDate))) ;
+        eleves.removeIf(eleve -> !(eleve.registration.isAfter(LocalDate.parse(firstDate)) && eleve.registration.isBefore(LocalDate.parse(secondDate)))) ;
         return eleves;
     }
 }

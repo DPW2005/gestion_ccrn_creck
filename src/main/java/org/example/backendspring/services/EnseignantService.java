@@ -8,9 +8,11 @@ import org.example.backendspring.models.Matiere;
 import org.example.backendspring.repositories.EnseignantRepository;
 import org.example.backendspring.repositories.EnseignementRepository;
 import org.example.backendspring.repositories.MatiereRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EnseignantService implements EnseignantInterface {
 
     private final EnseignantRepository enseignantRepository ;

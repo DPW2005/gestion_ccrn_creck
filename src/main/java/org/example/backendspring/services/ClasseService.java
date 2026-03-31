@@ -4,9 +4,11 @@ import org.example.backendspring.dto.ClasseDto;
 import org.example.backendspring.interfaces.ClasseInterface;
 import org.example.backendspring.models.*;
 import org.example.backendspring.repositories.*;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ClasseService implements ClasseInterface {
 
     private final ClasseRepository classeRepository ;

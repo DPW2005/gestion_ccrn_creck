@@ -10,10 +10,12 @@ import org.example.backendspring.repositories.BulletinRepository;
 import org.example.backendspring.repositories.ClasseRepository;
 import org.example.backendspring.repositories.EvaluationRepository;
 import org.example.backendspring.repositories.ExamenRepository;
+import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
 
+@Service
 public class ExamenService implements ExamenInterface {
 
     private final ExamenRepository examenRepository ;
@@ -99,8 +101,8 @@ public class ExamenService implements ExamenInterface {
     }
 
     @Override
-    public List<Examen> findAllByStart(LocalDate start) {
-        return this.examenRepository.findAllByStart(start) ;
+    public List<Examen> findAllByStart(String start) {
+        return this.examenRepository.findAllByStart(LocalDate.parse(start)) ;
     }
 
     @Override

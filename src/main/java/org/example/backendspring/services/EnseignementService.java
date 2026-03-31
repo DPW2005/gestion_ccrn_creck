@@ -4,9 +4,11 @@ import org.example.backendspring.dto.EnseignementDto;
 import org.example.backendspring.interfaces.EnseignementInterface;
 import org.example.backendspring.models.*;
 import org.example.backendspring.repositories.*;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EnseignementService implements EnseignementInterface {
 
     private final EnseignementRepository enseignementRepository ;

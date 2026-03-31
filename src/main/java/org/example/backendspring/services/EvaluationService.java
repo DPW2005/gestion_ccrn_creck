@@ -7,9 +7,11 @@ import org.example.backendspring.models.Evaluation;
 import org.example.backendspring.models.Examen;
 import org.example.backendspring.models.Note;
 import org.example.backendspring.repositories.*;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class EvaluationService implements EvaluationInterface {
 
     private final EvaluationRepository evaluationRepository ;
